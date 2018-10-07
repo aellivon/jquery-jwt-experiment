@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+    <table style="width:100%">
+      <thead>
+        <th>Product Name</th>
+        <th>Product Brand</th> 
+        <th>Archive?</th>
+      </thead>
+      <tbody class="table-body">
+     </tbody>
+    </table>
+  
+    <form id="form-create-product" style="margin-top: 200px">
+        <div>
+          <label> Create New Product </label>
+        </div>
+        <label>Product Name</label>
+        <input type="" name="product_name">
+        <label>Product Brand</label>
+        <input type="" name="product_brand">
+        <button type="submit"> Submit </button>
+        <div>
+            <label class="just-label-errors d-none"></label>
+        </div>
+    </form>
+   <input type="hidden" value="index" id="initialize-type">
+{% endblock %}

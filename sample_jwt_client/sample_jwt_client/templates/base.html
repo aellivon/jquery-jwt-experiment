@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample</title>
+        <link rel="stylesheet" type="text/css" href="{% static '/non-vendors/css/styles.css' %}">
+        <script src="{% static '/vendors/js/jquery.js' %}"></script>
+        <script src= "{% static '/non-vendors/js/constants.js' %}"></script>
+        <script src= "{% static '/non-vendors/js/urls.js' %}"></script>
+        <script src="{% static 'non-vendors/js/scripts.js' %}"> </script>
+    </head>
+    <body class="{% block body_class %} {% endblock %}">
+                {% block body %}
+                {% endblock %}
+    </body>
+        
+</html>

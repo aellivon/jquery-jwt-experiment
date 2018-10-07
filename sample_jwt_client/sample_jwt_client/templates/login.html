@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+    <!-- Name lets the server know which field is which -->
+    <form id="form-login" >
+        <label>Email</label>
+        <input name="email">
+        <label> Password </label>
+        <input name="password" type="password">
+        <button>Login</button>
+    </form>
+    <label class="just-label-errors d-none"> xxxxx</label>
+    <!-- This lets the jquery know which initialize its going to take -->
+    <input type="hidden" value="login" id="initialize-type">
+{% endblock %}

@@ -1,0 +1,16 @@
+.d-none{
+    display: none;
+}
+
+.just-label-errors{
+    color: red;
+}
+
+table {
+    width: 100%; 
+    background-color: #f1f1c1;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

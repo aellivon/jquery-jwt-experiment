@@ -1,0 +1,6 @@
+*.pyc
+media
+db.sqlite3
+local_settings.py
+sample_jwt_server_env
+sample_jwt_client_env
